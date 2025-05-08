@@ -62,7 +62,7 @@ const GlobalProvider = ({ children }) => {
                 return responseData
             }
         } catch (error) {
-            AxiosTostError(error)
+            console.log(error)
             return error
         }
     }
@@ -85,7 +85,7 @@ const GlobalProvider = ({ children }) => {
             }
 
         } catch (error) {
-            AxiosTostError(error)
+            console.log(error)
         }
     }
 
