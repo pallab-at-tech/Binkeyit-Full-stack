@@ -9,7 +9,7 @@ const auth = async (request, response, next) => {
         const token = request.cookies.accesstoken || request?.headers?.authorization?.split(" ")[1]
         if (!token) {
             return response.status(401).json({
-                message: "Provide token"
+                message: "you haven't login"
             })
         }
 
