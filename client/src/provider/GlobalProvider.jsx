@@ -130,7 +130,7 @@ const GlobalProvider = ({ children }) => {
                 dispatch(handleAddAdress(responseData.data))
             }
         } catch (error) {
-            AxiosTostError(error)
+            console.log(error)
         }
     }
 
